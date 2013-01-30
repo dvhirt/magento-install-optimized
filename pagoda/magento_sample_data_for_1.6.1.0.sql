@@ -11652,14 +11652,6 @@ LOCK TABLES `core_config_data` WRITE;
 
 INSERT INTO `core_config_data` (`config_id`, `scope`, `scope_id`, `path`, `value`)
 VALUES
-  (1,'default',0,'web/unsecure/base_link_url','http://{%APP_NAME%}.pagodabox.com/'),
-  (2,'default',0,'web/unsecure/base_skin_url','http://web2-{%APP_NAME%}.pagodabox.com/'),
-  (3,'default',0,'web/unsecure/base_media_url','http://web3-{%APP_NAME%}.pagodabox.com/'),
-  (4,'default',0,'web/unsecure/base_js_url','http://web4-{%APP_NAME%}.pagodabox.com/'),
-  (5,'default',0,'web/secure/base_link_url','https://{%APP_NAME%}.pagodabox.com/'),
-  (6,'default',0,'web/secure/base_skin_url','https://web2-{%APP_NAME%}.pagodabox.com/'),
-  (7,'default',0,'web/secure/base_media_url','https://web3-{%APP_NAME%}.pagodabox.com/'),
-  (8,'default',0,'web/secure/base_js_url','https://web4-{%APP_NAME%}.pagodabox.com/'),
   (9,'default',0,'web/unsecure/base_url','http://{%APP_NAME%}.pagodabox.com/'),
   (10,'default',0,'web/secure/base_url','https://{%APP_NAME%}.pagodabox.com/');
 
