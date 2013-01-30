@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $xml = new XmlWriter();
 $xml->openMemory();
@@ -129,5 +129,4 @@ $xml->endElement(); //config
 
 $handle = fopen('/var/www/app/etc/local.xml', 'w');
 fwrite($handle, $xml->outputMemory(true));
-    
-?>
+fclose($handle);
