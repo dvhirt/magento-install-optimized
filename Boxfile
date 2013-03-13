@@ -19,9 +19,12 @@ web1:
   static_expire: 31536000
   after_build:
     # Run script that will generate local.xml config file and place it in app/etc/
-    - "php /var/www/pagoda/local_xml_generator.php"
+    - "php pagoda/local_xml_generator.php"
+  before_deploy:
+    - "cp pagoda/media/.htaccess media/"
+    - "cp pagoda/var/.htaccess var/"
   after_deploy:
-    - "php /var/www/index.php > /dev/null"
+    - "php index.php > /dev/null"
   php_max_execution_time: 100
   cron:
     - "*/15 * * * *": "php cron.php" #shortest available cron schedule is every 15 Minutes.
