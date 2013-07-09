@@ -11652,8 +11652,8 @@ LOCK TABLES `core_config_data` WRITE;
 
 INSERT INTO `core_config_data` (`config_id`, `scope`, `scope_id`, `path`, `value`)
 VALUES
-  (9,'default',0,'web/unsecure/base_url','http://{%APP_NAME%}.pagodabox.com/'),
-  (10,'default',0,'web/secure/base_url','https://{%APP_NAME%}.pagodabox.com/');
+  (9,'default',0,'web/unsecure/base_url','http://{%APP_NAME%}.gopagoda.com/'),
+  (10,'default',0,'web/secure/base_url','https://{%APP_NAME%}.gopagoda.com/');
 
 /*!40000 ALTER TABLE `core_config_data` ENABLE KEYS */;
 UNLOCK TABLES;
